@@ -1,0 +1,42 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "bottomRow": 22,
+  "boxShadow": "none",
+  "defaultSwitchState": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "0mjsf4qwye",
+  "label": "Gespendet",
+  "labelPosition": "Left",
+  "labelStyle": "BOLD",
+  "labelTextSize": "1.25rem",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 23,
+  "mobileLeftColumn": 6,
+  "mobileRightColumn": 18,
+  "mobileTopRow": 19,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 2.79144287109375,
+  "parentId": "zq73wufl1e",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "topRow": 18,
+  "type": "SWITCH_WIDGET",
+  "version": 1,
+  "widgetId": "h9w01v3src",
+  "widgetName": "Switch1"
+}

@@ -1,0 +1,47 @@
+{
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 73,
+  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "briefcase",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "yneslg3c0l",
+  "leftColumn": 24,
+  "minWidth": 50,
+  "mobileBottomRow": 53,
+  "mobileLeftColumn": 6,
+  "mobileRightColumn": 10,
+  "mobileTopRow": 49,
+  "needsErrorInfo": false,
+  "onClick": "{{ navigateTo(\"https://paypal.me/Chaosjeck11/\" + getMe.data.open_amount, {}, \"NEW_WINDOW\");\n  markAsPaid.run(() => getMe.run(), () => showAlert(\"Fehler beim Speichern\", \"error\"));\n}}\n\n",
+  "parentColumnSpace": 6.84375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 39,
+  "topRow": 66,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "074n333xai",
+  "widgetName": "IconButton1"
+}

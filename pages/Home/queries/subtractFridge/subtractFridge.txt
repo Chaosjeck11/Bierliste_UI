@@ -1,0 +1,5 @@
+{
+  "mode": "subtract",
+  "amount": 1,
+  "stock": 0
+}

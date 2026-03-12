@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 8,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "minus",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "yneslg3c0l",
+  "leftColumn": 1,
+  "minWidth": 50,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 13,
+  "mobileRightColumn": 17,
+  "mobileTopRow": 4,
+  "needsErrorInfo": false,
+  "onClick": "{{RefillController.subtractOne()}}",
+  "originalBottomRow": 8,
+  "originalTopRow": 4,
+  "parentColumnSpace": 1.81591796875,
+  "parentId": "xzs17zcbf2",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 28,
+  "topRow": 4,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "s5eqghnpjt",
+  "widgetName": "SubOne"
+}

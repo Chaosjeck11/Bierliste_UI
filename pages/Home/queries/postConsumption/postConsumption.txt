@@ -1,0 +1,4 @@
+{"drink_id": {{appsmith.store.consumption_drink_id}},
+ "amount": {{appsmith.store.consumption_amount}}
+}
+

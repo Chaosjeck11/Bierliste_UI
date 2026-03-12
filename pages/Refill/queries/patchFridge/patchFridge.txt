@@ -1,0 +1,5 @@
+{
+  "mode": "{{appsmith.store.fridge_mode}}",
+  "amount": {{appsmith.store.fridge_amount}},
+  "stock": {{appsmith.store.fridge_stock || 0}}
+}

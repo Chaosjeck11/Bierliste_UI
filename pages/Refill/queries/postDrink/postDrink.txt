@@ -1,0 +1,4 @@
+{
+  "name": "{{appsmith.store.drink_name}}",
+  "price_per_unit": {{appsmith.store.drink_price}}
+}

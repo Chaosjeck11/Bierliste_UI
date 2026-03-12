@@ -1,0 +1,4 @@
+{
+  "username": "{{inpRegisterUsername.text}}",
+  "password": "{{inpRegisterPassword.text}}"
+}

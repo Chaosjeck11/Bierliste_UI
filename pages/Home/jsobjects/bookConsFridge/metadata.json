@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "69b333509aa48741bcc27ded_98f4478f-f688-4080-ad21-9f8ca8e2bea1",
+  "id": "Home_bookConsFridge",
+  "unpublishedCollection": {
+    "name": "bookConsFridge",
+    "pageId": "Home",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

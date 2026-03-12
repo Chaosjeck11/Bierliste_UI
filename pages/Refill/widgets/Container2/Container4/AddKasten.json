@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 29,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "plus",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "yneslg3c0l",
+  "leftColumn": 29,
+  "minWidth": 50,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 13,
+  "mobileRightColumn": 17,
+  "mobileTopRow": 4,
+  "needsErrorInfo": false,
+  "onClick": "{{RefillController.addKasten('add')}}",
+  "originalBottomRow": 29,
+  "originalTopRow": 23,
+  "parentColumnSpace": 1.81591796875,
+  "parentId": "zq73wufl1e",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 60,
+  "topRow": 23,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "kctq8d1ltp",
+  "widgetName": "AddKasten"
+}

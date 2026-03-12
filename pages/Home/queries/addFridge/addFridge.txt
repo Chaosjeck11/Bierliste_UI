@@ -1,0 +1,5 @@
+{
+  "mode": "add",
+  "amount": 1,
+  "stock": 0
+}

@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 29,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "minus",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "yneslg3c0l",
+  "leftColumn": 0,
+  "minWidth": 50,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 13,
+  "mobileRightColumn": 17,
+  "mobileTopRow": 4,
+  "needsErrorInfo": false,
+  "onClick": "{{RefillController.addKasten('subtract')}}",
+  "originalBottomRow": 37,
+  "originalTopRow": 31,
+  "parentColumnSpace": 1.81591796875,
+  "parentId": "zq73wufl1e",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 29,
+  "topRow": 23,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "87lnwhk3me",
+  "widgetName": "SubKasten"
+}
