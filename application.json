@@ -58,6 +58,10 @@
       "isDefault": false
     }
   ],
+  "staticUrlSettings": {
+    "enabled": true,
+    "uniqueSlug": "bierliste"
+  },
   "unpublishedAppLayout": {
     "type": "MOBILE"
   },
