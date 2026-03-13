@@ -36,7 +36,7 @@
   "mobileRightColumn": 38,
   "mobileTopRow": 14,
   "needsErrorInfo": false,
-  "onClick": "{{RefillController.setManuel()}}",
+  "onClick": "{{RefillController.setManuel()\nresetWidget(\"Container5\"),true\n}}",
   "parentColumnSpace": 1.81591796875,
   "parentId": "4ikpwch66j",
   "parentRowSpace": 10,

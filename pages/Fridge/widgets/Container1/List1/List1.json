@@ -71,19 +71,16 @@
       "key": "triggeredItemView"
     },
     {
-      "key": "primaryKeys"
-    },
-    {
       "key": "accentColor"
     },
     {
       "key": "listData"
+    },
+    {
+      "key": "primaryKeys"
     }
   ],
   "dynamicPropertyPathList": [
-    {
-      "key": "primaryKeys"
-    },
     {
       "key": "onItemClick"
     }
@@ -118,7 +115,7 @@
   "parentColumnSpace": 5.99658203125,
   "parentId": "yo8gpdbbfi",
   "parentRowSpace": 10,
-  "primaryKeys": "{{List1.listData.map((currentItem, currentIndex) =>currentItem[\"id\"])}}",
+  "primaryKeys": "{{List1.listData.map((currentItem, currentIndex) => currentItem[\"drink_id\"] )}}",
   "renderMode": "CANVAS",
   "requiresFlatWidgetChildren": true,
   "responsiveBehavior": "fill",

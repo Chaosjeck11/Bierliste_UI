@@ -59,8 +59,11 @@ export default {
 		await storeValue('drink_price', Number(inpNewDrinkPrice.text));
 		await postDrink.run(
 			() => {
-				getDrinks.run();
+
+				storeValue('upload_drink_id', postDrink.data.id);
+				uploadDrinkImageCreate.run();
 				getFridge.run();
+				getDrinks.run();
 				closeModal(Modal1.name);
 				showAlert('Getränk angelegt ✓', 'success');
 			},
@@ -70,10 +73,19 @@ export default {
 
 	updateDrink: async () => {
 		await storeValue('edit_drink_id', drpGetraenk.selectedOptionValue);
-		
+
 		await patchDrink.run();
+
+		// Bild hochladen, nur wenn eines ausgewählt wurde
+		if (FilePicker_DrinkImageChange.files.length > 0) {
+			await storeValue('upload_drink_id', drpGetraenk.selectedOptionValue);
+			uploadDrinkImageChange.run();
+			showAlert("klappt")
+		}
 		getDrinks.run();
 		closeModal(ChangeDrinkData.name);
-	}
+	},
+
+
 
 }

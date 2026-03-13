@@ -57,7 +57,11 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClose"
+    }
+  ],
   "height": 396,
   "isCanvas": true,
   "isLoading": false,
@@ -70,6 +74,7 @@
   "mobileRightColumn": 40,
   "mobileTopRow": 39,
   "needsErrorInfo": false,
+  "onClose": "{{resetWidget(\"ManuelBetrag\", true);}}",
   "parentColumnSpace": 6.84375,
   "parentId": "0",
   "parentRowSpace": 10,

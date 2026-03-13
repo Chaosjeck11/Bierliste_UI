@@ -6,9 +6,6 @@
   "defaultImage": "",
   "dynamicBindingPathList": [
     {
-      "key": "image"
-    },
-    {
       "key": "borderRadius"
     }
   ],
@@ -16,7 +13,7 @@
   "enableDownload": false,
   "enableRotation": false,
   "flexVerticalAlignment": "start",
-  "image": "{{\"https://loremflickr.com/200/200/\" + currentItem.name}}",
+  "image": "{{currentItem.image_base64 \n  ? \"data:image/jpeg;base64,\" + cur}",
   "imageShape": "RECTANGLE",
   "isLoading": false,
   "isVisible": true,
