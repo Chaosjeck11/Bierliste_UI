@@ -1,0 +1,6 @@
+{
+  "username": "{{appsmith.store.admin_patch_username}}",
+  "role": "{{appsmith.store.admin_patch_role}}",
+  "active": {{appsmith.store.admin_patch_active}},
+  "password": "{{appsmith.store.admin_patch_password}}"
+}

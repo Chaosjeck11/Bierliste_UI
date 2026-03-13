@@ -1,0 +1,3 @@
+{
+  "amount": {{appsmith.store.admin_pay_amount}}
+}

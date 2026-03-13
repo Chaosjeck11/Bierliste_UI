@@ -1,8 +1,7 @@
 {
-  "animateLoading": true,
+  "animateLoading": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
-  "disableLink": false,
+  "bottomRow": 9,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -15,42 +14,38 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "fontSize"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1.5rem",
+  "fontSize": "1rem",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "bf8ctibphi",
-  "leftColumn": 1,
+  "key": "smaeajk4al",
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 7,
-  "mobileLeftColumn": 3,
-  "mobileRightColumn": 19,
-  "mobileTopRow": 3,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 16,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
   "overflow": "NONE",
-  "parentColumnSpace": 6.53125,
-  "parentId": "k1joboet7l",
+  "parentColumnSpace": 6.84375,
+  "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 38,
+  "rightColumn": 63,
   "shouldTruncate": false,
-  "text": "User-Management:",
-  "textAlign": "CENTER",
+  "text": "",
+  "textAlign": "LEFT",
   "textColor": "#ffffff",
   "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "6g3y7dn4a6",
-  "widgetName": "FridgeRefill"
+  "widgetId": "rhgrf72ls4",
+  "widgetName": "Text1Copy1"
 }

@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "69b333509aa48741bcc27ded_6366c0ba-7de4-4513-bbcb-ad87a0be3566",
-  "id": "Home_markAsPaid",
+  "gitSyncId": "69b333509aa48741bcc27ded_0f99a66c-f21a-4cff-8d82-3e6c1f699caa",
+  "id": "Admin_patchUser",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n\t\"amount\": {{Number(getMe.data.open_amount || 0).toFixed(2)}}\n}",
+      "body": "{\n  \"username\": \"{{appsmith.store.admin_patch_username}}\",\n  \"role\": \"{{appsmith.store.admin_patch_role}}\",\n  \"active\": {{appsmith.store.admin_patch_active}},\n  \"password\": \"{{appsmith.store.admin_patch_password}}\"\n}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
@@ -26,7 +26,7 @@
       "httpMethod": "PATCH",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/users/{{getMe.data.id}}/pay",
+      "path": "/users/{{appsmith.store.admin_selected_user_id}}",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -53,8 +53,8 @@
         "key": "body"
       }
     ],
-    "name": "markAsPaid",
-    "pageId": "Home",
+    "name": "patchUser",
+    "pageId": "Admin",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }

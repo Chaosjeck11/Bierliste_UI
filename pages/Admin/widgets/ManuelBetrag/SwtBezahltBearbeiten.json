@@ -1,0 +1,52 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "bottomRow": 30,
+  "boxShadow": "none",
+  "defaultSwitchState": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onChange"
+    }
+  ],
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "eau663lz3e",
+  "label": "Bezahlten Betrag Bearbeiten",
+  "labelPosition": "Left",
+  "leftColumn": 8,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 21,
+  "mobileLeftColumn": 45,
+  "mobileRightColumn": 57,
+  "mobileTopRow": 17,
+  "needsErrorInfo": false,
+  "onChange": "{{PaidAmount.setDisabled(!PaidAmount.isDisabled)}}",
+  "originalBottomRow": 30,
+  "originalTopRow": 26,
+  "parentColumnSpace": 6.4921875,
+  "parentId": "05w79vv7zm",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 47,
+  "topRow": 26,
+  "type": "SWITCH_WIDGET",
+  "version": 1,
+  "widgetId": "yt2233zhor",
+  "widgetName": "SwtBezahltBearbeiten"
+}
