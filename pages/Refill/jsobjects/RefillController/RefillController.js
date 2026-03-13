@@ -49,26 +49,27 @@ export default {
 		getFridge.run();
 	},
 
-	// Neues Getränk anlegen
 	async createDrink() {
-		if (!inpNewDrinkName.text || !inpNewDrinkPrice.text) {
+		if (!inpNewDrinkName.text || !inpNewDrinkPrice.value) {
 			showAlert('Name und Preis erforderlich', 'warning');
 			return;
 		}
 		await storeValue('drink_name', inpNewDrinkName.text);
-		await storeValue('drink_price', Number(inpNewDrinkPrice.text));
-		await postDrink.run(
-			() => {
+		await storeValue('drink_price', inpNewDrinkPrice.value);
 
-				storeValue('upload_drink_id', postDrink.data.id);
-				uploadDrinkImageCreate.run();
-				getFridge.run();
-				getDrinks.run();
-				closeModal(Modal1.name);
-				showAlert('Getränk angelegt ✓', 'success');
-			},
-			() => { showAlert('Getränk existiert bereits', 'error'); }
-		);
+		// Erst Drink erstellen, DANN id auslesen
+		await postDrink.run();
+
+		// Jetzt ist postDrink.data.id verfügbar
+		if (FilePicker_DrinkImageCreate.files.length > 0) {
+			await storeValue('upload_drink_id', postDrink.data.id);
+			await uploadDrinkImageCreate.run();
+		}
+
+		getFridge.run();
+		getDrinks.run();
+		closeModal(Modal1.name);
+		showAlert('Getränk angelegt ✓', 'success');
 	},
 
 	updateDrink: async () => {
@@ -84,7 +85,7 @@ export default {
 		}
 		getDrinks.run();
 		closeModal(ChangeDrinkData.name);
-	},
+	}
 
 
 

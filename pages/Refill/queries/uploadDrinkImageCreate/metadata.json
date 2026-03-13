@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "69b333509aa48741bcc27ded_f94d1662-1c37-4d3d-ab56-14040ef065ef",
+  "gitSyncId": "69b333509aa48741bcc27ded_c0cfc374-48a2-47ce-b127-744c58427dac",
   "id": "Refill_uploadDrinkImageCreate",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
@@ -16,7 +16,7 @@
         {
           "key": "image",
           "type": "File",
-          "value": "{{FilePicker_DrinkImageChange.files[0]}}"
+          "value": "{{FilePicker_DrinkImageCreate.files[0]}}"
         }
       ],
       "encodeParamsToggle": true,

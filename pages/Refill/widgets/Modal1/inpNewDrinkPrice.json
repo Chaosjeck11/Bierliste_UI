@@ -8,7 +8,7 @@
   "boxShadow": "none",
   "decimals": 2,
   "defaultCurrencyCode": "EUR",
-  "defaultText": "1",
+  "defaultText": "1.00",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -47,7 +47,7 @@
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 50,
-  "showStepArrows": false,
+  "showStepArrows": true,
   "topRow": 6,
   "type": "CURRENCY_INPUT_WIDGET",
   "version": 1,

@@ -7,13 +7,16 @@
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "image"
     }
   ],
   "dynamicTriggerPathList": [],
   "enableDownload": false,
   "enableRotation": false,
   "flexVerticalAlignment": "start",
-  "image": "{{currentItem.image_base64 \n  ? \"data:image/jpeg;base64,\" + cur}",
+  "image": "{{\"data:image/jpeg;base64,\" + currentItem.image_base64}}",
   "imageShape": "RECTANGLE",
   "isLoading": false,
   "isVisible": true,
