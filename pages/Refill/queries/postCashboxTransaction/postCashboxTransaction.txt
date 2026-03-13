@@ -1,0 +1,7 @@
+{
+	"amount": {{appsmith.store.cashbox_amount}},
+	"direction": "{{appsmith.store.cashbox_direction}}",
+	"reason": "{{appsmith.store.cashbox_reason}}",
+	"payment_type": "{{appsmith.store.cashbox_payment_type}}",
+	"user_id_paid": {{appsmith.store.cashbox_user_id_paid || "null"}}
+}

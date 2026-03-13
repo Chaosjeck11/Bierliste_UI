@@ -31,6 +31,26 @@ export default {
 		await storeValue('fridge_mode', mode);
 		await storeValue('fridge_amount', kastenAmount);
 		await storeValue('fridge_stock', 0);
+
+		if(!swtSpende.isSwitchedOn){
+			if(mode === "add"){
+				await storeValue("cashbox_amount", KastenKosten.value);
+				await storeValue("cashbox_direction", "OUT");
+				await storeValue("cashbox_reason", "Einkauf");
+				await storeValue("cashbox_payment_type", "Bar oder mit Karte");
+				await storeValue("cashbox_user_id_paid", getMe.data.id);
+				postCashboxTransaction.run();
+			} else if(mode === "subtract"){
+				await storeValue("cashbox_amount", KastenKosten.value);
+				await storeValue("cashbox_direction", "CORRECTION");
+				await storeValue("cashbox_reason", "Rückbuchung Kasten Kauf");
+				await storeValue("cashbox_payment_type", "");
+				await storeValue("cashbox_user_id_paid", getMe.data.id);
+				postCashboxTransaction.run();
+			}
+		}
+
+
 		await patchFridge.run();
 		getFridge.run();
 	},

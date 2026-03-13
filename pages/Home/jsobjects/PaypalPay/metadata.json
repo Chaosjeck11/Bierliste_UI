@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "69b333509aa48741bcc27ded_7b5a40cf-8d10-4aab-a986-6c984e55a050",
+  "id": "Home_PaypalPay",
+  "unpublishedCollection": {
+    "name": "PaypalPay",
+    "pageId": "Home",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

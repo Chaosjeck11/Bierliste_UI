@@ -44,7 +44,9 @@ export default {
       // Direkt paid_amount setzen — braucht eigene Route, daher als pay-Betrag die Differenz
       showAlert("Direkte paid_amount Bearbeitung noch nicht implementiert", "warning");
       return;
-    } else {
+    } else if (SwtBezahltBearbeiten.isSwitchedOn) {
+			
+		} else {
       amount = Number(Gezahlt.text);
       if (!amount || amount <= 0) {
         showAlert("Bitte gültigen Betrag eingeben", "warning");

@@ -32,7 +32,7 @@
   "mobileRightColumn": 10,
   "mobileTopRow": 49,
   "needsErrorInfo": false,
-  "onClick": "{{ navigateTo(\"https://paypal.me/Chaosjeck11/\" + getMe.data.open_amount, {}, \"NEW_WINDOW\");\n  markAsPaid.run(() => getMe.run(), () => showAlert(\"Fehler beim Speichern\", \"error\"));\n}}\n\n",
+  "onClick": "{{ PaypalPay.PayPaypal()\n}}\n\n",
   "parentColumnSpace": 6.84375,
   "parentId": "0",
   "parentRowSpace": 10,
