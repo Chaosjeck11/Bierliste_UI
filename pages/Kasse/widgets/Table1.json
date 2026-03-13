@@ -43,7 +43,9 @@
     "user_id_paid"
   ],
   "columnUpdatedAt": 1773441365417,
-  "columnWidthMap": {},
+  "columnWidthMap": {
+    "created_by_username": 146
+  },
   "customIsLoading": false,
   "customIsLoadingValue": "",
   "defaultPageSize": 0,

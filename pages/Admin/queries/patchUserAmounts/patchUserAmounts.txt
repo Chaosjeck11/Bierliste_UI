@@ -1,0 +1,4 @@
+{
+	"open_amount": {{appsmith.store.patch_open_amount}},
+	"paid_amount": {{appsmith.store.patch_paid_amount}}
+}
