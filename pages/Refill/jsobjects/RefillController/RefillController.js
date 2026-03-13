@@ -11,11 +11,8 @@ export default {
 		await storeValue('fridge_mode', 'add');
 		await storeValue('fridge_amount', 1);
 		await storeValue('fridge_stock', 0);
-		await patchFridge.run(
-			() => { this.refresh(); showAlert('+1 gebucht ✓', 'success'); },
-			() => { showAlert('Fehler', 'error'); }
-		);
-		await getFridge.run();
+		await patchFridge.run();
+		getFridge.run();
 	},
 
 	async subtractOne() {
@@ -23,11 +20,8 @@ export default {
 		await storeValue('fridge_mode', 'subtract');
 		await storeValue('fridge_amount', 1);
 		await storeValue('fridge_stock', 0);
-		await patchFridge.run(
-			() => { this.refresh(); showAlert('-1 gebucht ✓', 'success'); },
-			() => { showAlert('Fehler', 'error'); }
-		);
-		await getFridge.run();
+		await patchFridge.run();
+		getFridge.run();
 	},
 
 	async addKasten(mode) {
@@ -37,11 +31,8 @@ export default {
 		await storeValue('fridge_mode', mode);
 		await storeValue('fridge_amount', kastenAmount);
 		await storeValue('fridge_stock', 0);
-		await patchFridge.run(
-			() => { this.refresh(); showAlert((mode === 'add' ? '+' : '-') + kastenAmount + ' Flaschen ✓', 'success'); },
-			() => { showAlert('Fehler', 'error'); }
-		);
-		await getFridge.run();
+		await patchFridge.run();
+		getFridge.run();
 	},
 
 	async setManuel() {
@@ -52,29 +43,37 @@ export default {
 		await storeValue('fridge_amount', 0);
 		await storeValue('fridge_stock', val);
 		await patchFridge.run(
-			() => { this.refresh(); showAlert('Bestand gesetzt ✓', 'success'); },
+			() => { this.refresh()},
 			() => { showAlert('Fehler', 'error'); }
 		);
-		await getFridge.run();
+		getFridge.run();
 	},
 
 	// Neues Getränk anlegen
 	async createDrink() {
-  if (!inpNewDrinkName.text || !inpNewDrinkPrice.text) {
-    showAlert('Name und Preis erforderlich', 'warning');
-    return;
-  }
-  await storeValue('drink_name', inpNewDrinkName.text);
-  await storeValue('drink_price', Number(inpNewDrinkPrice.text));
-  await postDrink.run(
-    () => {
-      getDrinks.run();
-			getFridge.run();
-      closeModal('Modal1');
-      showAlert('Getränk angelegt ✓', 'success');
-    },
-    () => { showAlert('Getränk existiert bereits', 'error'); }
-  );
-},
+		if (!inpNewDrinkName.text || !inpNewDrinkPrice.text) {
+			showAlert('Name und Preis erforderlich', 'warning');
+			return;
+		}
+		await storeValue('drink_name', inpNewDrinkName.text);
+		await storeValue('drink_price', Number(inpNewDrinkPrice.text));
+		await postDrink.run(
+			() => {
+				getDrinks.run();
+				getFridge.run();
+				closeModal(Modal1.name);
+				showAlert('Getränk angelegt ✓', 'success');
+			},
+			() => { showAlert('Getränk existiert bereits', 'error'); }
+		);
+	},
+
+	updateDrink: async () => {
+		await storeValue('edit_drink_id', drpGetraenk.selectedOptionValue);
+		
+		await patchDrink.run();
+		getDrinks.run();
+		closeModal(ChangeDrinkData.name);
+	}
 
 }

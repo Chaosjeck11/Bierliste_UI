@@ -13,11 +13,17 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "onClick"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -26,7 +32,7 @@
     }
   ],
   "isDefaultClickDisabled": true,
-  "isDisabled": false,
+  "isDisabled": "{{\n!OffenerBetrag.text || !PaidAmount.text || \n!Gezahlt.text\n}}",
   "isLoading": false,
   "isVisible": true,
   "key": "rxmqo388ns",

@@ -8,8 +8,8 @@ export default {
 
 
 	async bookConsumption(drinkId, amount) {
-		await storeValue("consumption_drink_id", drinkId);
-		await storeValue("consumption_amount", amount);
+		 storeValue("consumption_drink_id", drinkId);
+		 storeValue("consumption_amount", amount);
 
 
 		// Aktuellen Fridge-Bestand für dieses Getränk prüfen
@@ -21,18 +21,15 @@ export default {
 
 		if (amount > 0) {
 			if (currentStock > 0) {
-				await subtractFridge.run(
-					() => {},
-					() => { showAlert("Fridge-Sync fehlgeschlagen", "warning"); }
-				);
+				subtractFridge.run();
 			}
 		} else if(amount < 0){
-			await addFridge.run();
+			addFridge.run();
 		}
 
 		await postConsumption.run();
-		await getMe.run();
-		await getMyConsumption.run();
+		getMe.run();
+		getMyConsumption.run();
 
 		showAlert(
 			amount > 0 ? `+${amount} gebucht ✓` : `${amount} korrigiert ✓`,

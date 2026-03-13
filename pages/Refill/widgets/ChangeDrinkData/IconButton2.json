@@ -1,10 +1,10 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 29,
+  "bottomRow": 4,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "PRIMARY",
+  "buttonVariant": "TERTIARY",
   "dynamicBindingPathList": [
     {
       "key": "buttonColor"
@@ -13,40 +13,32 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
     }
   ],
-  "iconName": "minus",
+  "iconName": "cross",
+  "iconSize": 24,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "yneslg3c0l",
-  "leftColumn": 0,
+  "key": "wc07ylcdq6",
+  "leftColumn": 58,
   "minWidth": 50,
-  "mobileBottomRow": 8,
-  "mobileLeftColumn": 13,
-  "mobileRightColumn": 17,
-  "mobileTopRow": 4,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 58,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onClick": "{{RefillController.addKasten('subtract')}}",
-  "originalBottomRow": 29,
-  "originalTopRow": 23,
-  "parentColumnSpace": 1.81591796875,
-  "parentId": "zq73wufl1e",
-  "parentRowSpace": 10,
+  "onClick": "{{closeModal(ChangeDrinkData.name);}}",
+  "parentId": "iw0ri55n9e",
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 29,
-  "topRow": 23,
+  "rightColumn": 64,
+  "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "87lnwhk3me",
-  "widgetName": "SubKasten"
+  "widgetId": "7zap16wpwv",
+  "widgetName": "IconButton2"
 }

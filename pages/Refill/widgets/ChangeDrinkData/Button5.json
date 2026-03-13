@@ -1,10 +1,11 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 24,
+  "bottomRow": 34,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "TERTIARY",
+  "buttonStyle": "PRIMARY_BUTTON",
+  "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
@@ -12,6 +13,17 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -19,34 +31,30 @@
       "key": "onClick"
     }
   ],
-  "iconAlign": "left",
-  "iconName": "add",
   "isDefaultClickDisabled": true,
-  "isDisabled": false,
+  "isDisabled": "{{!ActiveChange.selectedOptionValue || !ChangeName.text || !PreisProUnit.text}}",
   "isLoading": false,
   "isVisible": true,
-  "key": "0iq0oywi1m",
-  "leftColumn": 31,
+  "key": "9cqtme3zl8",
+  "leftColumn": 30,
   "minWidth": 120,
-  "mobileBottomRow": 17,
-  "mobileLeftColumn": 25,
-  "mobileRightColumn": 41,
-  "mobileTopRow": 13,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(Modal1.name);}}",
-  "parentColumnSpace": 6.84375,
-  "parentId": "0",
-  "parentRowSpace": 10,
+  "onClick": "{{RefillController.updateDrink()}}",
+  "parentId": "iw0ri55n9e",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 61,
-  "text": "Neues Getränk anlegen",
-  "topRow": 20,
+  "rightColumn": 59,
+  "text": "Confirm",
+  "topRow": 30,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "tm0cnsrtxu",
-  "widgetName": "Button1"
+  "widgetId": "q2xndmns53",
+  "widgetName": "Button5"
 }

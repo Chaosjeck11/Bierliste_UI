@@ -1,0 +1,5 @@
+{
+  "name": "{{ChangeName.text}}",
+  "price_per_unit": {{parseFloat(PreisProUnit.text)}},
+  "active": {{ActiveChange.selectedOptionValue === "true"}}
+}
